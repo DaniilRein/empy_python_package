@@ -13,11 +13,16 @@ pip install virtualenv
 python -m venv venv
 #activate virtual environment
 .\venv\Scripts\activate 
-+ (venv) should appear as prefix to all command (run next command just after activating venv)
+# different on mac
+
+# + (venv) should appear as prefix to all command (run next command just after activating venv)
 #update venv's python package-installer (pip) to its latest version
 pip install --upgrade pip
 #install projects packages
-pip install -e .[dev]     
+pip install -e .[dev]  
+#will abscence of -e make it only inside venv and not global??
+
+
 ``` 
 
 ## Modify package dependencies (add/remove/update external modules/packages):

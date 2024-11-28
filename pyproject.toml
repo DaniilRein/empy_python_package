@@ -19,6 +19,8 @@ dev = [
     "my-project[test]",
     "my-project[doc]",
     "my-project[build]",
+    "my-project[jupyter]"
+   
 ]
 ds = [
     "numpy==2.1.3",
@@ -40,6 +42,11 @@ doc = [
 ]
 build = [
     "build>=1.2.2",
+]
+jupyter = [
+    "notebook>=7.0.0",
+    "jupyterlab>=4.0.0",
+    "ipykernel>=6.0.0"
 ]
 
 [tool.ruff]
